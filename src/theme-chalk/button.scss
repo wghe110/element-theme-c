@@ -171,7 +171,7 @@
     --el-button-disabled-text-color: var(--el-text-color-placeholder);
   }
 
-  @each $type in (primary, primary-gradient, success, warning, danger, info) {
+  @each $type in (primary, success, warning, danger, info) {
     @include m($type) {
       @include button-variant($type);
     }

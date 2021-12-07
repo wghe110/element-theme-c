@@ -1,0 +1,16 @@
+.item{
+  margin-bottom: 36px;
+  >h2{
+    font-size: 26px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+    color: #303133;
+    font-weight: bolder;
+  }
+  >.list{
+    padding-left: 20px;
+    >li{
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -16,22 +16,25 @@ $colors: map.deep-merge(
     'white': #ffffff,
     'black': #000000,
     'primary': (
-      'base': #409eff,
+      'base': #36A4FF,
+    ),
+    'primary-gradient': (
+      'base': linear-gradient(90deg, #78C2FF 0%, #36A4FF 100%),
     ),
     'success': (
-      'base': #67c23a,
+      'base': #4CC09E,
     ),
     'warning': (
-      'base': #e6a23c,
+      'base': #FA8B16,
     ),
     'danger': (
-      'base': #f56c6c,
+      'base': #FF4D4F,
     ),
     'error': (
-      'base': #f56c6c,
+      'base': #FF4D4F,
     ),
     'info': (
-      'base': #909399,
+      'base': #A9A9A9,
     ),
   ),
   $colors
@@ -40,6 +43,7 @@ $colors: map.deep-merge(
 $color-white: map.get($colors, 'white') !default;
 $color-black: map.get($colors, 'black') !default;
 $color-primary: map.get($colors, 'primary', 'base') !default;
+$color-primary-gradient: map.get($colors, 'primary-gradient', 'base') !default;
 $color-success: map.get($colors, 'success', 'base') !default;
 $color-warning: map.get($colors, 'warning', 'base') !default;
 $color-danger: map.get($colors, 'danger', 'base') !default;

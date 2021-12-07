@@ -10,10 +10,6 @@ npm-debug.log*
 .idea
 
 # Bundle
-dist.zip
-dist.tar
-dist
-dist-ssr
 
 # local env files
 *.local

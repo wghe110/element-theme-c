@@ -32,6 +32,16 @@
   font-weight: var(--el-button-font-weight);
   user-select: none;
 
+  // 复写type=primary
+  &.el-button--primary:not(.is-plain,.is-disabled){
+    border: none;
+    background: linear-gradient(90deg, #78C2FF 0%, #36A4FF 100%);
+    &:hover,
+    &:focus{
+      background: linear-gradient(90deg, #8ECCFF 0%, #4FAFFF 100%);
+    }
+  }
+
   & + & {
     margin-left: 10px;
   }

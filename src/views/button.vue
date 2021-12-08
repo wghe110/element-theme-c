@@ -28,12 +28,12 @@
         <el-button type="danger" round>Danger</el-button>
       </li>
       <li>
-        <el-button  circle>
+        <el-button circle>
           <el-icon>
             <Search />
           </el-icon>
         </el-button>
-        <el-button type="primary"  circle>
+        <el-button type="primary" circle>
           <el-icon>
             <Edit />
           </el-icon>
@@ -100,7 +100,7 @@
       <li>
         <el-button type="primary">
           <el-icon>
-            <Edit/>
+            <Edit />
           </el-icon>
         </el-button>
         <el-button type="primary">
@@ -146,20 +146,20 @@
           </el-button>
         </el-button-group>
 
-        <el-button-group style="margin-left: 14px;">
-          <el-button type="primary" >
+        <el-button-group style="margin-left: 14px">
+          <el-button type="primary">
             <el-icon>
-              <Edit/>
+              <Edit />
             </el-icon>
           </el-button>
           <el-button type="primary">
             <el-icon>
-              <Share/>
+              <Share />
             </el-icon>
           </el-button>
           <el-button type="primary">
             <el-icon>
-              <Delete/>
+              <Delete />
             </el-icon>
           </el-button>
         </el-button-group>
@@ -182,7 +182,7 @@
       <li>
         <el-button size="large">large</el-button>
         <el-button>Default</el-button>
-        <el-button >Medium</el-button>
+        <el-button>Medium</el-button>
         <el-button size="small">Small</el-button>
         <el-button size="mini">Mini</el-button>
       </li>
@@ -225,17 +225,36 @@
 </template>
 
 <script>
-  import { Search, Edit, Check, Message, Star, Delete, Share, Upload, ArrowLeft, ArrowRight } from '@element-plus/icons'
-  import '../theme-chalk/button.scss'
-  import '../theme-chalk/button-group.scss'
+import {
+  Search,
+  Edit,
+  Check,
+  Message,
+  Star,
+  Delete,
+  Share,
+  Upload,
+  ArrowLeft,
+  ArrowRight,
+} from "@element-plus/icons";
+import "../theme-chalk/button.scss";
+import "../theme-chalk/button-group.scss";
 
-  export default {
-    components: {
-      Search, Edit, Check, Message, Star, Delete, Share, Upload, ArrowLeft, ArrowRight
-    }
-  }
+export default {
+  components: {
+    Search,
+    Edit,
+    Check,
+    Message,
+    Star,
+    Delete,
+    Share,
+    Upload,
+    ArrowLeft,
+    ArrowRight,
+  },
+};
 </script>
 
 <style lang="">
-  
 </style>

@@ -147,10 +147,10 @@
     }
 
     &::after {
-      width: 4px;
-      height: 4px;
+      width: 6px;
+      height: 6px;
       border-radius: var(--el-radio-input-border-radius);
-      background-color: var(--el-color-white);
+      background-color: var(--el-color-primary);
       content: '';
       position: absolute;
       left: 50%;

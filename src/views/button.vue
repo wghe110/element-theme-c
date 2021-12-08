@@ -180,24 +180,31 @@
     <h2>各种尺寸的尺寸按钮</h2>
     <ul class="list">
       <li>
+        <el-button size="large">large</el-button>
         <el-button>Default</el-button>
-        <el-button size="medium">Medium</el-button>
+        <el-button >Medium</el-button>
         <el-button size="small">Small</el-button>
         <el-button size="mini">Mini</el-button>
       </li>
       <li>
+        <el-button size="large" round>large</el-button>
         <el-button round>Default</el-button>
         <el-button size="medium" round>Medium</el-button>
         <el-button size="small" round>Small</el-button>
         <el-button size="mini" round>Mini</el-button>
       </li>
       <li>
+        <el-button size="large" circle>
+          <el-icon>
+            <Search />
+          </el-icon>
+        </el-button>
         <el-button circle>
           <el-icon>
             <Search />
           </el-icon>
         </el-button>
-        <el-button :icon="Search" size="medium" circle>
+        <el-button size="medium" circle>
           <el-icon>
             <Search />
           </el-icon>

@@ -5,6 +5,22 @@
 @use '../common/var' as *;
 @use '../common/transition' as *;
 
+@mixin prefixdate {
+  height: auto;
+  top: 1px;
+  bottom: 1px;
+  right: 1px;
+  left: auto;
+  min-width: 32px;
+  justify-content: center;
+  background-color: map.get($colors, 'info', 'header');
+  border-left: var(--el-input-border);
+  border-radius: 0 var(--el-border-radius-large) var(--el-border-radius-large) 0;
+  .el-icon{
+    color: var(--el-text-color-regular);
+  }
+}
+
 @include b(picker) {
   @include e(popper) {
     @include picker-popper(
@@ -71,7 +87,7 @@
     height: inherit;
     font-size: 14px;
     margin-left: -5px;
-    color: var(--el-text-color-placeholder);
+    color: var(--el-text-color-regular);
     float: left;
 
     svg {
@@ -90,7 +106,7 @@
     width: 39%;
     text-align: center;
     font-size: var(--el-font-size-base);
-    color: var(--el-text-color-regular);
+    // color: var(--el-text-color-regular);
 
     &::placeholder {
       color: var(--el-text-color-placeholder);
@@ -130,13 +146,26 @@
       visibility: hidden;
     }
   }
+
+  .el-input__prefix{
+    @include prefixdate;
+  }
+  .el-input__suffix{
+    right: 32px;
+  }
+  &.el-input--prefix {
+    .el-input__inner{
+      padding-left: 8px;
+      padding-right: 60px;
+    }
+  }
 }
 
 @include b(range-editor) {
   &.#{$namespace}-input__inner {
     display: inline-flex;
     align-items: center;
-    padding: 3px 10px;
+    padding: 3px 40px 3px 8px;
   }
 
   .#{$namespace}-range-input {
@@ -193,5 +222,20 @@
     .#{$namespace}-range-separator {
       color: map.get($input-disabled, 'text-color');
     }
+  }
+
+  .el-range__icon{
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    right: 1px;
+    min-width: 32px;
+    justify-content: center;
+    background-color: map.get($colors, 'info', 'header');
+    border-radius: 0 var(--el-border-radius-large) var(--el-border-radius-large) 0;
+    border-left: 1px solid #e7e7e7;
+  }
+  .el-range__close-icon{
+    margin-left: 8px;
   }
 }

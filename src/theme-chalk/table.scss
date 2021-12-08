@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 @use 'mixins/mixins' as *;
 @use 'mixins/var' as *;
 @use 'common/var' as *;
@@ -173,7 +175,6 @@
       margin: 0;
     }
   }
-
   th.#{$namespace}-table__cell.is-leaf,
   td.#{$namespace}-table__cell {
     border-bottom: var(--el-table-border);

@@ -31,8 +31,8 @@ $checkbox-bordered-padding: map.merge(
 $checkbox-bordered-input-height: () !default;
 $checkbox-bordered-input-height: map.merge(
   (
-    'medium': 14px,
-    'small': 12px,
+    'medium': 16px,
+    'small': 14px,
     'mini': 12px,
   ),
   $checkbox-bordered-input-height
@@ -102,12 +102,23 @@ $checkbox-bordered-input-width: map.merge(
       }
     }
 
-    &.#{$namespace}-checkbox--small,
-    &.#{$namespace}-checkbox--mini {
+    &.#{$namespace}-checkbox--small{
       .#{$namespace}-checkbox__inner {
         &::after {
           height: 6px;
           width: 2px;
+          left: 4px;
+          top: 1px;
+        }
+      }
+    }
+    &.#{$namespace}-checkbox--mini {
+      .#{$namespace}-checkbox__inner {
+        &::after {
+          height: 5px;
+          width: 2px;
+          left: 3px;
+          top: 1px;
         }
       }
     }
@@ -195,11 +206,11 @@ $checkbox-bordered-input-width: map.merge(
           position: absolute;
           display: block;
           background-color: var(--el-checkbox-checked-icon-color);
-          height: 2px;
+          height: 12px;
           transform: scale(0.5);
           left: 0;
           right: 0;
-          top: 5px;
+          top: 1px;
         }
 
         &::after {
@@ -228,13 +239,13 @@ $checkbox-bordered-input-width: map.merge(
     &::after {
       box-sizing: content-box;
       content: '';
-      border: 1px solid var(--el-checkbox-checked-icon-color);
+      border: 2px solid var(--el-checkbox-checked-icon-color);
       border-left: 0;
       border-top: 0;
-      height: 7px;
-      left: 4px;
+      height: 6px;
+      left: 5px;
       position: absolute;
-      top: 1px;
+      top: 2px;
       transform: rotate(45deg) scaleY(0);
       width: 3px;
       transition: transform 0.15s ease-in 0.05s;

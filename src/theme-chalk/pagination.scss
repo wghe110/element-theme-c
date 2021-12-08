@@ -23,6 +23,7 @@
     line-height: var(--el-pagination-button-height);
     vertical-align: top;
     box-sizing: border-box;
+
   }
 
   .#{$namespace}-input__inner {
@@ -215,10 +216,11 @@
     .btn-next,
     .#{$namespace}-pager li {
       margin: 0 5px;
-      background-color: map.get($colors, 'info', 'light-9');
+      // background-color: map.get($colors, 'info', 'light-9');
       color: var(--el-text-color-regular);
       min-width: 30px;
       border-radius: 2px;
+      border:1px solid var(--el-pagination-border-color);
 
       &.disabled {
         color: var(--el-text-color-placeholder);
@@ -237,10 +239,12 @@
     .#{$namespace}-pager li:not(.disabled) {
       &:hover {
         color: var(--el-pagination-hover-color);
+        border-color: var(--el-color-primary);
       }
 
       &.active {
         background-color: var(--el-color-primary);
+        border-color: var(--el-color-primary);
         color: var(--el-color-white);
       }
     }

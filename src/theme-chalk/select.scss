@@ -49,7 +49,7 @@
   .#{$namespace}-input__inner {
     cursor: pointer;
     display: inline-flex;
-
+    border-radius: var(--el-border-radius-large);
     &:focus {
       border-color: var(--el-select-input-focus-border-color);
     }
@@ -97,8 +97,11 @@
       }
     }
 
-    &.is-focus .#{$namespace}-input__inner {
-      border-color: var(--el-select-input-focus-border-color);
+    &.is-focus {
+      .#{$namespace}-input__inner,
+      .el-input__suffix {
+        border-color: var(--el-select-input-focus-border-color);
+      }
     }
 
     & .#{$namespace}-input__prefix-icon {
@@ -173,5 +176,11 @@
         transform: translate(0, 0.5px);
       }
     }
+  }
+
+  .el-input__suffix{
+    background-color: map.get($colors, 'info', 'header');
+    border-left: var(--el-input-border) ;
+    border-radius: 0 var(--el-border-radius-large) var(--el-border-radius-large) 0;
   }
 }

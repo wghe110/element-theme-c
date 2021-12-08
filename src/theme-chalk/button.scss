@@ -177,7 +177,7 @@
     }
   }
 
-  @each $size in (medium, small, mini) {
+  @each $size in (large, medium, small, mini) {
     @include m($size) {
       min-height: map.get($input-height, $size);
 

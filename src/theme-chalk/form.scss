@@ -19,6 +19,7 @@
       display: block;
       text-align: left;
       padding: 0 0 10px 0;
+      line-height: 20px;
     }
   }
   @include m(inline) {
@@ -41,7 +42,7 @@
 
 @include b(form-item) {
   display: flex;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 
   & .#{$namespace}-form-item {
     margin-bottom: 0;

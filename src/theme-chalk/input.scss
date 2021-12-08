@@ -18,7 +18,7 @@
   @include e(inner) {
     display: block;
     resize: vertical;
-    padding: 5px 15px;
+    padding: 5px 8px;
     line-height: 1.5;
     box-sizing: border-box;
     width: 100%;
@@ -143,7 +143,7 @@
     height: map.get($input-height, 'default');
     line-height: map.get($input-height, 'default');
     outline: none;
-    padding: 0 15px;
+    padding: 0 8px;
     transition: var(--el-transition-border);
     width: 100%;
 
@@ -174,13 +174,14 @@
     display: inline-flex;
 
     position: absolute;
-    height: 100%;
-    right: 5px;
-    top: 0;
-    text-align: center;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    min-width: 32px;
     color: var(--el-input-icon-color, map.get($input, 'icon-color'));
     transition: all var(--el-transition-duration);
     pointer-events: none;
+    justify-content: center;
   }
 
   @include e(suffix-inner) {
@@ -265,7 +266,7 @@
     }
 
     .#{$namespace}-input__inner {
-      padding-right: 30px;
+      padding-right: 40px;
     }
   }
 

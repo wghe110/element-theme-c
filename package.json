@@ -23,10 +23,11 @@
     "dist"
   ],
   "dependencies": {
-    "element-plus": "^1.2.0-beta.5",
-    "vue": "^3.2.16"
+    
   },
   "devDependencies": {
+    "element-plus": "^1.2.0-beta.5",
+    "vue": "^3.2.16",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "@vitejs/plugin-vue": "^1.9.3",

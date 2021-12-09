@@ -2,7 +2,12 @@
   "name": "element-plus-theme-cestc",
   "description": "基于element-plus的ui组件做了一些修改，来适应公司ui规范",
   "version": "1.0.1",
-  "keywords": ["elementPlus", "elementUI", "vue", "vite"],
+  "keywords": [
+    "elementPlus",
+    "elementUI",
+    "vue",
+    "vite"
+  ],
   "author": {
     "name": "wghe110",
     "email": "397856638@qq.com"

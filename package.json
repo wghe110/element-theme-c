@@ -1,12 +1,27 @@
 {
-  "name": "vite-project",
-  "version": "0.0.0",
+  "name": "element-plus-theme-cestc",
+  "description": "基于element-plus的ui组件做了一些修改，来适应公司ui规范",
+  "version": "1.0.0",
+  "keywords": ["elementPlus", "elementUI", "vue", "vite"],
+  "author": {
+    "name": "wghe110",
+    "email": "397856638@qq.com"
+  },
+  "repository": {
+    "type": "git",
+    "ulr": "https://github.com/wghe110/element-theme-c.git"
+  },
+  "main": "dist/index.css",
   "scripts": {
     "serve": "vite",
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "gulp build",
+    "build:web": "vue-tsc --noEmit && vite build",
     "preview": "vite preview"
   },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "element-plus": "^1.2.0-beta.5",
     "vue": "^3.2.16"
@@ -28,5 +43,6 @@
     "vite": "^2.6.4",
     "vue-router": "^4.0.12",
     "vue-tsc": "^0.3.0"
-  }
+  },
+  "license": "MIT"
 }

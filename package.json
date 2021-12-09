@@ -1,7 +1,7 @@
 {
   "name": "element-plus-theme-cestc",
   "description": "基于element-plus的ui组件做了一些修改，来适应公司ui规范",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": ["elementPlus", "elementUI", "vue", "vite"],
   "author": {
     "name": "wghe110",
@@ -23,11 +23,10 @@
     "dist"
   ],
   "dependencies": {
-    
+    "element-plus": "^1.2.0-beta.5",
+    "vue": "^3.2.16"
   },
   "devDependencies": {
-    "element-plus": "^1.2.0-beta.5",
-    "vue": "^3.2.16",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "@vitejs/plugin-vue": "^1.9.3",

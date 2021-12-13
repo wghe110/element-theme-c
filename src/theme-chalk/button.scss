@@ -31,6 +31,7 @@
   transition: 0.1s;
   font-weight: var(--el-button-font-weight);
   user-select: none;
+  min-width: 80px;
 
   // 复写type=primary
   &.el-button--primary:not(.is-plain,.is-disabled){

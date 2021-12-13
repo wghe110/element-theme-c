@@ -44,6 +44,7 @@
     display: inline-block;
     overflow-x: hidden;
     vertical-align: bottom;
+    color: var(--el-text-color-primary)
   }
 
   .#{$namespace}-input__inner {
@@ -51,7 +52,7 @@
     display: inline-flex;
     border-radius: var(--el-border-radius-large);
     &:focus {
-      border-color: var(--el-select-input-focus-border-color);
+      border-color: var(--el-input-focus-border);
     }
   }
 
@@ -100,7 +101,7 @@
     &.is-focus {
       .#{$namespace}-input__inner,
       .el-input__suffix {
-        border-color: var(--el-select-input-focus-border-color);
+        border-color: var(--el-input-focus-border);
       }
     }
 
@@ -152,14 +153,15 @@
   }
 
   .#{$namespace}-tag__close {
-    margin-top: -2px;
+    color: var(--el-text-color-primary);
+    margin-top: -1px;
   }
 
   .#{$namespace}-select__tags .#{$namespace}-tag {
     box-sizing: border-box;
     border-color: transparent;
     margin: 2px 0 2px 6px;
-    background-color: #f0f2f5;
+    background-color: rgba(54, 164, 255, 0.2);
 
     .#{$namespace}-icon-close {
       background-color: var(--el-text-color-placeholder);

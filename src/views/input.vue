@@ -14,6 +14,15 @@
       <li>
         <el-input v-model="input1" placeholder="Please input password" show-password />
       </li>
+      <li>
+        <el-input-number v-model="input1" placeholder="Please input password" controls-position="right" />
+      </li>
+      <li>
+        <el-cascader
+          v-model="valueCascader"
+          :options="optionsCascader"
+        ></el-cascader>
+      </li>
     </ul>
   </section>
 
@@ -90,6 +99,9 @@
 import { Calendar, Search } from '@element-plus/icons-vue'
 import { ref } from 'vue'
 import '../theme-chalk/input.scss'
+import '../theme-chalk/input-number.scss'
+import '../theme-chalk/cascader.scss'
+import '../theme-chalk/cascader-panel.scss'
 
 export default {
   components: {
@@ -97,12 +109,33 @@ export default {
     Search,
   },
   setup() {
+    const optionsCascader = ref([
+      {
+        value: 'guide',
+        label: 'Guide',
+        children: [
+          {
+            value: 'disciplines',
+            label: 'Disciplines',
+            children: [
+              {
+                value: 'consistency',
+                label: 'Consistency',
+              }
+            ]
+          }
+        ]
+      }
+    ])
+
     return  {
+      valueCascader: ref([]),
       input1: ref(''),
       input2: ref(''),
       input3: ref(''),
       input4: ref(''),
       textarea: ref(''),
+      optionsCascader,
     }
   }
 }

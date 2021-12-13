@@ -39,6 +39,10 @@ export default [
       {
         path: 'datePicker',
         component: () => import('/src/views/date-picker.vue'),
+      },
+      {
+        path: 'steps',
+        component: () => import('/src/views/steps.vue'),
       }
     ]
   }

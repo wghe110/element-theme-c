@@ -84,7 +84,8 @@ $color-info: map.get($colors, 'info', 'base') !default;
 $text-color: () !default;
 $text-color: map.merge(
   (
-    'primary': #303133,
+    // 'primary': #303133,
+    'primary': #4B4B4B,
     'regular': #4B4B4B,
     'secondary': #909399,
     'placeholder': #c0c4cc,

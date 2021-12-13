@@ -21,6 +21,9 @@
         map.get($input, 'hover-border')
       );
     }
+    .#{$namespace}-input__suffix{
+      border-color: var(--el-input-hover-border);
+    }
   }
 
   .#{$namespace}-input {
@@ -36,7 +39,11 @@
         );
       }
     }
-
+    .#{$namespace}-input__suffix{
+      background-color: map.get($colors, 'info', 'header');
+      border-left: var(--el-input-border) ;
+      border-radius: 0 var(--el-border-radius-large) var(--el-border-radius-large) 0;
+    }
     .#{$namespace}-input__suffix-inner {
       .#{$namespace}-icon {
         height: calc(100% - 2px);
@@ -69,6 +76,9 @@
           --el-input-focus-border,
           map.get($input, 'focus-border')
         );
+      }
+      .#{$namespace}-input__suffix{
+        border-color: var(--el-input-focus-border);
       }
     }
   }

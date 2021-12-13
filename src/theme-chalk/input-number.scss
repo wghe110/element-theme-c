@@ -129,6 +129,7 @@
     .#{$namespace}-input__inner {
       padding-left: 15px;
       padding-right: #{map.get($input-height, 'default') + 10};
+      text-align: left;
     }
 
     @include e((increase, decrease)) {

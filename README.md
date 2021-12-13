@@ -58,3 +58,15 @@
   ├─ 文件命名规范.md
   └─ 目录管理规范.md
 ```
+
+## 版本管理
+  版本管理用工具包`semver`管理，使用方法如下：
+    ```
+      // 升级修订版本号
+      npm version patch
+      // 升级次版本号
+      npm version minor
+      // 升级主版本号
+      npm version major
+    ```
+  [其他用法](https://www.npmjs.cn/misc/semver/)

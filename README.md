@@ -11,22 +11,22 @@
       npm install element-plus@1.2.0-beta.5
     ```
   2. 项目引入
-    ```
-      // main.ts
-      import { createApp } from 'vue'
-      import App from './App.vue'
+```
+  // main.ts
+  import { createApp } from 'vue'
+  import App from './App.vue'
 
-      import ElementPlus from 'element-plus'
-      // 不要引入默认的样式
-      // import 'element-plus/dist/index.css'
-      // 引入自定义样式
-      import 'element-plus-theme-cestc'
+  import ElementPlus from 'element-plus'
+  // 不要引入默认的样式
+  // import 'element-plus/dist/index.css'
+  // 引入自定义样式
+  import 'element-plus-theme-cestc'
 
-      const app = createApp(App)
+  const app = createApp(App)
 
-      app.use(ElementPlus)
-      app.mount('#app')
-    ```
+  app.use(ElementPlus)
+  app.mount('#app')
+```
 
 ## 项目目录
 ```

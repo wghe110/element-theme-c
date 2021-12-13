@@ -87,7 +87,7 @@
 </template>
 
 <script>
-import { Calendar, Search } from '@element-plus/icons'
+import { Calendar, Search } from '@element-plus/icons-vue'
 import { ref } from 'vue'
 import '../theme-chalk/input.scss'
 

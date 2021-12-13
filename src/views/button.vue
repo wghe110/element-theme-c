@@ -236,7 +236,7 @@ import {
   Upload,
   ArrowLeft,
   ArrowRight,
-} from "@element-plus/icons";
+} from "@element-plus/icons-vue";
 import "../theme-chalk/button.scss";
 import "../theme-chalk/button-group.scss";
 

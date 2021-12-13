@@ -29,6 +29,7 @@
   ],
   "dependencies": {
     "element-plus": "^1.2.0-beta.5",
+    "semver": "^7.3.5",
     "vue": "^3.2.16"
   },
   "devDependencies": {
